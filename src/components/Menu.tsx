@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import Recipe from "./Recipe";
-function Menu({ recipes }) {
+import { TRecipe } from "../types/recipe";
+
+interface Props {
+  recipes: TRecipe[];
+}
+
+const Menu: FC<Props> = ({ recipes }) => {
   return (
     <article>
       <header>
@@ -13,5 +19,5 @@ function Menu({ recipes }) {
       </div>
     </article>
   );
-}
+};
 export default Menu;
