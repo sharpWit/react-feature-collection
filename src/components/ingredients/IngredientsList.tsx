@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Ingredient from "./Ingredient";
-import { TIngredient } from "../types/ingredient";
+import { TIngredient } from "../../types/ingredient";
 
 interface Props {
   list: TIngredient[];

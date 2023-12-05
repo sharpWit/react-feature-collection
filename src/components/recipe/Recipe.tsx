@@ -1,7 +1,7 @@
 import { FC } from "react";
-import IngredientsList from "./IngredientsList";
+import IngredientsList from "../ingredients/IngredientsList";
 import Instructions from "./Instructions";
-import { TRecipe } from "../types/recipe";
+import { TRecipe } from "../../types/recipe";
 
 const Recipe: FC<TRecipe> = ({ name, ingredients, steps }) => {
   return (
