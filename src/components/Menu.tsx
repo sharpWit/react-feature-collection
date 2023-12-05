@@ -1,6 +1,7 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Recipe from "./Recipe";
 import { TRecipe } from "../types/recipe";
+import StarRating from "./StarRating";
 
 interface Props {
   recipes: TRecipe[];
@@ -17,6 +18,11 @@ const Menu: FC<Props> = ({ recipes }) => {
           <Recipe key={i} {...recipe} />
         ))}
       </div>
+      <StarRating
+        totalStars={5}
+        style={{ backgroundColor: "lightblue" }}
+        onDoubleClick={(e) => alert("double click")}
+      />
     </article>
   );
 };

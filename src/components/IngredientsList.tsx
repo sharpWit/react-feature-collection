@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Ingredient from "./Ingredient";
 import { TIngredient } from "../types/ingredient";
 
