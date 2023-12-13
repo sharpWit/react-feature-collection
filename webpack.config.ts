@@ -36,6 +36,7 @@ const config: Configuration = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/", // This is important for correct asset loading in your React app
   },
   plugins: [
     new CopyWebpackPlugin({

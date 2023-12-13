@@ -1,4 +1,7 @@
-.hello {
-  font-size: 5em;
-  color: darkmagenta;
+@import "../../node_modules/modern-normalize/modern-normalize.css";
+
+.header {
+  font-size: 3em;
+  color: darkviolet;
+  text-shadow: 2px 2px #ff0000;
 }
